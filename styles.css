@@ -805,7 +805,11 @@ footer {
   }
 }
 
-
+/* Add a meta tag for responsive viewport */
+meta {
+  name: viewport;
+  content: width=device-width, initial-scale=1.0;
+}
 
 /* General styles for mobile devices */
 body {
