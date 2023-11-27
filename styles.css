@@ -804,3 +804,82 @@ footer {
     justify-content: center;
   }
 }
+
+
+
+/* General styles for mobile devices */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .page_one {
+    height: auto;
+  }
+
+  .navbar {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(6, 6, 49);
+  }
+
+  .navbar_right,
+  .navbar_left {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .words_center {
+    top: 50px;
+  }
+
+  .cards,
+  .page_one_bottom,
+  .slides,
+  .pricing_bottom,
+  .branches_top,
+  .branches_middle,
+  .branches_bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .card,
+  .slide,
+  .column,
+  .branches_bottom_left,
+  .branches_bottom_right {
+    width: 100%;
+  }
+
+  .branches_top_left,
+  .branches_middle_right h1 {
+    width: 100%;
+  }
+
+  .branches_middle_left img {
+    height: auto;
+  }
+
+  .newsletter {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .footer_top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer_bottom {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
